@@ -1,1 +1,1 @@
-export type MyExclude<T, U> = any
+export type MyExclude<T, U> = Exclude<T, U>
