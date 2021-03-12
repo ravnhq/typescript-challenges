@@ -1,1 +1,1 @@
-export type Last<T extends any[]> = any
+export type Last<T extends any[]> = [0,...T][T["length"]] 
