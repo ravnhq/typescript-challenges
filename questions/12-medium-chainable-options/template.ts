@@ -1,4 +1,4 @@
-export type Chainable = {
-  option(key: string, value: any): any
-  get(): any
+export type Chainable< T = {}> = {
+  option<K extends string, V>(key: K, value: V): Chainable<T & { [KEY in K ]: V }>
+  get(): T
 }
