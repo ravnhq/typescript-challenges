@@ -8,4 +8,8 @@ export type ControlsMap = {
   p: 'pointer'
 }
 
-export type ParsePrintFormat = any
+export type ParsePrintFormat<S extends string> = S extends `${infer S0}%${infer S1}${infer S2}`
+  ? S1 extends keyof ControlsMap
+    ? [ControlsMap[S1], ...ParsePrintFormat<S2>]
+    : ParsePrintFormat<S2>
+  :[]
