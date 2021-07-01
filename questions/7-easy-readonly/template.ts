@@ -1,1 +1,3 @@
-export type MyReadonly<T> = any
+export type MyReadonly<T> = {
+    readonly [key in keyof T] : T[key]
+}
