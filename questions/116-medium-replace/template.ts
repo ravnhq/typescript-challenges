@@ -5,10 +5,6 @@ export type Replace<
   From extends string,
   To extends string
 >= From extends '' ?  S :
-   S extends `${From}${infer restR}` ? 
-                      `${To}${restR}`:
-   S extends `${infer restL}${From}${infer restR}` ? 
-                       `${restL}${To}${restR}`: never;
-export type Capitalize<S extends string> =S extends `${infer first}${infer rest}` ? 
-                                                    `${Uppercase<first>}${rest}`: '';
+   S extends `${infer restL}${From}${infer restR}` ? `${restL}${To}${restR}`: never;
+
 //detect doble bar the remplace by one to

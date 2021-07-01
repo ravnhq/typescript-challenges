@@ -1,1 +1,4 @@
-export type LengthOfString<S extends String,V extends []> = S extends `${infer otro}${infer rest}` ? : never;
+export type StringtoArray<S extends string,A extends Array<string> = []> = S extends `${infer first}${infer second}` ? 
+                                                                            StringtoArray<second,[...A,first]>: A;
+
+export type LengthOfString<S extends string> = StringtoArray<S,[]>["length"]
