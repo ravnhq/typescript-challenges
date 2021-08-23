@@ -1,1 +1,1 @@
-export type MyReadonly<T> = any
+export type MyReadonly<T> = Readonly<T>
