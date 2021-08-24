@@ -1,1 +1,2 @@
-export type LengthOfString<S extends string> = any
+type StringToArray<S extends string> = S extends `${infer first}${infer rest}` ? [first, ...StringToArray<rest>] : S extends '' ? [] : [S]
+export type LengthOfString<S extends string> = StringToArray<S>['length']
