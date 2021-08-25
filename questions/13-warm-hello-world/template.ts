@@ -1,1 +1,2 @@
-export type HelloWorld = any // expected to be a string
+// expected to be a string
+export type HelloWorld = string;
