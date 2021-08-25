@@ -1,1 +1,1 @@
-export type First<T extends any[]> = any
+export type First<T extends unknown[]> = '0' extends keyof T ? T[0] : never
