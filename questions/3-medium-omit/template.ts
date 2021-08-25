@@ -1,1 +1,1 @@
-export type MyOmit<T, K> = any
+export type MyOmit<T, Key extends keyof T> = Pick<T, Exclude<keyof T, Key>>
