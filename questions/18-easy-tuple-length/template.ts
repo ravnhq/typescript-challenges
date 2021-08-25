@@ -1,1 +1,1 @@
-export type Length<T extends any> = any
+export type Length<T> = T extends {length: number} ? T['length'] : never;
