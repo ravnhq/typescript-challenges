@@ -1,4 +1,4 @@
-{ "include": ["questions/2-medium-return-type", "utils"],
+{ "include": ["questions/3-medium-omit", "utils"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
