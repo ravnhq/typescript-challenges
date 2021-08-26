@@ -1,1 +1,1 @@
-export type TupleToUnion<T> = any
+export type TupleToUnion<T> = T extends Array<unknown> ? T[number] : never ;
