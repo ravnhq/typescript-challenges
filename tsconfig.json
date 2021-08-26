@@ -1,4 +1,4 @@
-{ "include": ["questions/102-medium-trimleft", "utils"],
+{ "include": ["questions/108-medium-trim", "utils"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
