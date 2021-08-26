@@ -1,1 +1,1 @@
-export type Flatten = any
+export type Flatten<T> = T extends [] ? [] : T extends [infer H, ...infer T] ? [...Flatten<H>, ...Flatten<T>] : [T];
