@@ -1,1 +1,1 @@
-export type Length<T extends any> = any
+type Length<T> = T extends Array<unknown> ? T["length"] : never;

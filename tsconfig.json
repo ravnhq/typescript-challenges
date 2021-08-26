@@ -1,4 +1,4 @@
-{ "include": ["questions/14-easy-first", "utils"],
+{ "include": ["questions/18-easy-tuple-length", "utils"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
