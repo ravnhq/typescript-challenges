@@ -1,4 +1,4 @@
-{ "include": ["questions/11-easy-tuple-to-object", "utils"],
+{ "include": ["questions/14-easy-first", "utils"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
