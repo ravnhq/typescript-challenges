@@ -1,4 +1,4 @@
-{ "include": ["questions/9-medium-readonly-2", "utils"],
+{ "include": ["questions/10-medium-tuple-to-union", "utils"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
