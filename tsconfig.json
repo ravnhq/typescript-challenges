@@ -1,4 +1,4 @@
-{
+{ "include": ["questions/4-easy-pick", "utils"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
