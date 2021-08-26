@@ -1,4 +1,4 @@
-{ "include": ["questions/268-easy-if", "utils"],
+{ "include": ["questions/533-easy-contact", "utils"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
