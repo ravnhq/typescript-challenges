@@ -1,4 +1,4 @@
-{ "include": ["questions/298-medium-length-of-string", "utils"],
+{ "include": ["questions/459-medium-flatten", "utils"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
