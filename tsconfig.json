@@ -1,4 +1,4 @@
-{ "include": ["questions/110-medium-capitalize", "utils"],
+{ "include": ["questions/116-medium-replace", "utils"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
