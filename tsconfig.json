@@ -1,4 +1,4 @@
-{ "include": ["questions/3-medium-omit", "utils"],
+{ "include": ["questions/9-medium-readonly-2", "utils"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
