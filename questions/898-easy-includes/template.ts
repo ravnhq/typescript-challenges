@@ -1,1 +1,2 @@
-export type Includes<T extends readonly any[], U> = any
+export type Includes<T extends readonly any[], U> = U extends T[number] ? true : false
+
