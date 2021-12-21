@@ -53,7 +53,7 @@ type SumTupleNumNormalized<
 
 // Sums two tuple form numbers by calling SumTupleNumNormalized, with the correct order 
 // of arguments
-type SumTupleNum<A extends string[], B extends string[]> =
+export type SumTupleNum<A extends string[], B extends string[]> =
     CompTupleLen<A, B> extends Comparison.Lower
     ? SumTupleNumNormalized<B, A>
     : SumTupleNumNormalized<A, B>
