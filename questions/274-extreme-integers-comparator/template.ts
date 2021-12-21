@@ -8,7 +8,7 @@ type SplitToTuple<S extends string> =
     S extends `${infer H}${infer T}` ? [H, ...SplitToTuple<T>] : []
 
 type TupleTail<T extends any[]> =
-    T extends [infer _, infer T] ? T : []
+    T extends [infer _, ...infer R] ? R : []
 
 // Compares two tuples length, this works why removing one element every time 
 // until one of the tuples is empty (or both in which case this is Comparison.Equal).
