@@ -1,4 +1,4 @@
-import { Alike } from './template'
+import { Chainable } from './template'
 
 declare const a: Chainable
 
