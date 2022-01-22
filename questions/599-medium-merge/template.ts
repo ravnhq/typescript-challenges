@@ -1,1 +1,1 @@
-export type Merge<F, S> = any
+export type Merge<F, S> = keyof F extends keyof S ? 

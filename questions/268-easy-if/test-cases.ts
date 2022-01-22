@@ -1,4 +1,5 @@
 import { If } from './template'
+import { Expect, Equal } from '../../utils/index'
 
 type cases = [
   Expect<Equal<If<true, 'a', 'b'>, 'a'>>,

@@ -1,4 +1,5 @@
 import { MyReadonly2 } from './template'
+import { Expect, Equal } from '../../utils/index'
 
 type cases = [
   Expect<Alike<MyReadonly2<Todo1>, Readonly<Todo1>>>,

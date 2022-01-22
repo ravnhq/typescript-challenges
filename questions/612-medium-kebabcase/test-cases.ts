@@ -1,4 +1,5 @@
 import { KebabCase } from './template'
+import { Expect, Equal } from '../../utils/index'
 
 type cases = [
   Expect<Equal<KebabCase<'FooBarBaz'>, 'foo-bar-baz'>>,
