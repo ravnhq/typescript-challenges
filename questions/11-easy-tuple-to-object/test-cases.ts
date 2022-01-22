@@ -1,4 +1,5 @@
 import { TupleToObject } from './template'
+import { Expect, Equal } from '../../utils/index'
 
 const tuple = ['tesla', 'model 3', 'model X', 'model Y'] as const
 

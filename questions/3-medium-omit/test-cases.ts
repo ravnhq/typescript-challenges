@@ -1,4 +1,5 @@
 import { MyOmit } from './template'
+import { Expect, Equal } from '../../utils/index'
 
 type cases = [
   Expect<Equal<Expected1, MyOmit<Todo, 'description'>>>,

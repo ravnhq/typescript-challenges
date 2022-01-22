@@ -1,26 +1,26 @@
-type Expect<T extends true> = T
+export type Expect<T extends true> = T
 type ExpectTrue<T extends true> = T
 type ExpectFalse<T extends false> = T
 type IsTrue<T extends true> = T
 type IsFalse<T extends false> = T
 
-type Equal<X, Y> = (<T>() => T extends X ? 1 : 2) extends <T>() => T extends Y
-  ? 1
-  : 2
+export type Equal<X, Y> = (<T>() => T extends X ? 1 : 2) extends <
+  T
+>() => T extends Y ? 1 : 2
   ? true
   : false
 type NotEqual<X, Y> = true extends Equal<X, Y> ? false : true
 
 // https://stackoverflow.com/questions/49927523/disallow-call-with-any/49928360#49928360
 type IsAny<T> = 0 extends 1 & T ? true : false
-type NotAny<T> = true extends IsAny<T> ? false : true
+export type NotAny<T> = true extends IsAny<T> ? false : true
 
 type Debug<T> = { [K in keyof T]: T[K] }
 type MergeInsertions<T> = T extends object
   ? { [K in keyof T]: MergeInsertions<T[K]> }
   : T
 
-type Alike<X, Y> = Equal<MergeInsertions<X>, MergeInsertions<Y>>
+export type Alike<X, Y> = Equal<MergeInsertions<X>, MergeInsertions<Y>>
 
 type ExpectExtends<VALUE, EXPECTED> = EXPECTED extends VALUE ? true : false
 type ExpectValidArgs<

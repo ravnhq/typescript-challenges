@@ -1,5 +1,5 @@
 import { MyPick } from './template'
-
+import { Expect, Equal } from '../../utils/index'
 type cases = [
   Expect<Equal<Expected1, MyPick<Todo, 'title'>>>,
   Expect<Equal<Expected2, MyPick<Todo, 'title' | 'completed'>>>,

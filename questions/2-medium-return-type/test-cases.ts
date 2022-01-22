@@ -1,5 +1,5 @@
 import { MyReturnType } from './template'
-
+import { Expect, Equal } from '../../utils/index'
 type cases = [
   Expect<Equal<string, MyReturnType<() => string>>>,
   Expect<Equal<123, MyReturnType<() => 123>>>,

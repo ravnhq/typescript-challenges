@@ -1,4 +1,5 @@
 import { Diff } from './template'
+import { Expect, Equal } from '../../utils/index'
 
 type Foo = {
   name: string
