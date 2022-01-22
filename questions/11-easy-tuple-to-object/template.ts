@@ -1,1 +1,3 @@
-export type TupleToObject<T extends readonly any[]> = any
+type TupleToObject<T extends readonly (string | symbol | number)[]> = {
+  [K in T[number]]: K
+}
