@@ -1,1 +1,2 @@
-export type Length<T extends any> = any
+export type Length<T extends readonly unknown[]> = T['length'];
+
